@@ -16,17 +16,17 @@
         <nav class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
                 <!-- ロゴ -->
-<div class="flex items-center">
-  <h1 class="text-2xl font-bold text-black">
-    <a href="https://nakanogumi-kyoto.com/wp/" class="inline-block">
-      <img
-        src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2023/07/230726_2.png"
-        alt="株式会社中野組のロゴ"
-        class="h-10 md:h-12 w-auto"
-      />
-    </a>
-  </h1>
-</div>
+                <div class="flex items-center">
+                  <h1 class="text-2xl font-bold text-black">
+                    <a href="https://nakanogumi-kyoto.com/wp/" class="inline-block">
+                      <img
+                        src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2023/07/230726_2.png"
+                        alt="株式会社中野組のロゴ"
+                        class="h-10 md:h-12 w-auto"
+                      />
+                    </a>
+                  </h1>
+                </div>
                 
                 <!-- デスクトップナビゲーション -->
                 <div class="hidden lg:flex space-x-8">
@@ -53,7 +53,7 @@
                     <a href="services.html" class="nav-link block py-2 text-gray-700 hover:text-black">事業内容</a>
                     <a href="portfolio.html" class="nav-link block py-2 text-gray-700 hover:text-black">施工実績</a>
                     <a href="recruit.html" class="nav-link block py-2 text-gray-700 hover:text-black">採用情報</a>
-                    <a href="column.html" class="nav-link block py-2 text-gray-700 hover:text-black">コラム</a>
+                    <a href="column.html" class="nav-link block py-2 text-gray-700 hover:text黒">コラム</a>
                     <a href="contact.html" class="nav-link block py-2 bg-black text-white rounded mt-2 text-center">お問い合わせ</a>
                 </div>
             </div>
@@ -65,33 +65,25 @@
         <!-- ヒーローセクション -->
         <section class="relative h-screen overflow-hidden">
             <div class="hero-slider relative h-full">
-                <!-- スライド 1: メインビジュアル -->
-<div class="hero-slide active absolute inset-0 bg-black bg-contain bg-center bg-no-repeat" 
-     style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://newnormal-creator.com/wp-content/uploads/2025/09/image7-コピー.png')">
-    <div class="flex items-center justify-center h-full">
-        <div class="text-center text-white max-w-4xl px-4">
-            <h2 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                伝統と革新を融合した<br>
-                施工のプロフェッショナル
-            </h2>
-            <p class="text-xl md:text-2xl mb-8 opacity-90">
-                確かな技術力と豊富な実績で、お客様の理想を形にします
-            </p>
-            <!--<div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="about.html" class="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
-                    中野組について
-                </a>
-                <a href="contact.html" class="border-2 border-white text-white hover:bg-white hover:text-black px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
-                    お問い合わせ
-                </a>
-            </div>-->
-        </div>
-    </div>
-</div>
-                
-                <!-- スライド 2: 左官工事 -->
-<div class="hero-slide active absolute inset-0 bg-black bg-contain bg-center bg-no-repeat" 
-     style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://newnormal-creator.com/wp-content/uploads/2025/09/image11-コピー.png')">
+                <!-- スライド 1 -->
+                <div class="hero-slide absolute inset-0 bg-black bg-contain bg-center bg-no-repeat opacity-100 transition-opacity duration-700 z-10" aria-hidden="false"
+                     style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://newnormal-creator.com/wp-content/uploads/2025/09/image7-コピー.png')">
+                    <div class="flex items-center justify-center h-full">
+                        <div class="text-center text-white max-w-4xl px-4">
+                            <h2 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                                伝統と革新を融合した<br>
+                                施工のプロフェッショナル
+                            </h2>
+                            <p class="text-xl md:text-2xl mb-8 opacity-90">
+                                確かな技術力と豊富な実績で、お客様の理想を形にします
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- スライド 2 -->
+                <div class="hero-slide absolute inset-0 bg-black bg-contain bg-center bg-no-repeat opacity-0 transition-opacity duration-700" aria-hidden="true"
+                     style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://newnormal-creator.com/wp-content/uploads/2025/09/image11-コピー.png')">
                     <div class="flex items-center justify-center h-full">
                         <div class="text-center text-white max-w-4xl px-4">
                             <h2 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
@@ -105,9 +97,9 @@
                     </div>
                 </div>
                 
-                <!-- スライド 3: 施工現場 -->
-<div class="hero-slide active absolute inset-0 bg-black bg-contain bg-center bg-no-repeat" 
-     style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://newnormal-creator.com/wp-content/uploads/2025/09/image4-コピー.png')">
+                <!-- スライド 3 -->
+                <div class="hero-slide absolute inset-0 bg-black bg-contain bg-center bg-no-repeat opacity-0 transition-opacity duration-700" aria-hidden="true"
+                     style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://newnormal-creator.com/wp-content/uploads/2025/09/image4-コピー.png')">
                     <div class="flex items-center justify-center h-full">
                         <div class="text-center text-white max-w-4xl px-4">
                             <h2 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
@@ -123,10 +115,10 @@
             </div>
             
             <!-- スライドナビゲーション -->
-            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3">
-                <button class="slide-dot w-3 h-3 rounded-full bg-white opacity-100 hover:opacity-100 transition-opacity" data-slide="0"></button>
-                <button class="slide-dot w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity" data-slide="1"></button>
-                <button class="slide-dot w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity" data-slide="2"></button>
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20">
+                <button class="slide-dot w-3 h-3 rounded-full bg-white opacity-100 hover:opacity-100 transition-opacity" aria-label="slide 1"></button>
+                <button class="slide-dot w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity" aria-label="slide 2"></button>
+                <button class="slide-dot w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity" aria-label="slide 3"></button>
             </div>
             
             <!-- スクロールインジケーター -->
@@ -138,38 +130,35 @@
         </section>
 
         <!-- 中野組の強み -->
-<section class="py-20 bg-gray-50">
-  <div class="container mx-auto px-4">
-    <div class="text-center mb-10">
-      <h2 class="text-4xl font-bold text-black mb-4">中野組について</h2>
-      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-        当社中野組についてのご紹介と代表よりご挨拶
-      </p>
-    </div>
+        <section class="py-20 bg-gray-50">
+          <div class="container mx-auto px-4">
+            <div class="text-center mb-10">
+              <h2 class="text-4xl font-bold text-black mb-4">中野組について</h2>
+              <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                当社中野組についてのご紹介と代表よりご挨拶
+              </p>
+            </div>
 
-    <!-- 代表写真（顔が見えるように上寄せでトリミング） -->
-    <div class="max-w-4xl mx-auto mb-10">
-      <img
-        src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2024/05/240502_3-1024x1024.jpg"
-        alt="中野組 代表写真"
-        class="w-full rounded-lg shadow-lg object-cover"
-        style="aspect-ratio: 16 / 9; object-position: center 25%;"
-      />
-    </div>
+            <div class="max-w-4xl mx-auto mb-10">
+              <img
+                src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2024/05/240502_3-1024x1024.jpg"
+                alt="中野組 代表写真"
+                class="w-full rounded-lg shadow-lg object-cover"
+                style="aspect-ratio: 16 / 9; object-position: center 25%;"
+              />
+            </div>
 
-    <!-- 遷移ボタン -->
-    <div class="text-center">
-      <a
-        href="https://nakanogumi-kyoto.com/wp/"
-        class="inline-block bg-black text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-800 transition-colors"
-        aria-label="中野組について のページへ移動"
-      >
-        中野組について
-      </a>
-    </div>
-  </div>
-</section>
-
+            <div class="text-center">
+              <a
+                href="https://nakanogumi-kyoto.com/wp/"
+                class="inline-block bg-black text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-800 transition-colors"
+                aria-label="中野組について のページへ移動"
+              >
+                中野組について
+              </a>
+            </div>
+          </div>
+        </section>
 
         <!-- 事業内容（概要） -->
         <section class="py-20 bg-white">
@@ -189,9 +178,7 @@
                                  alt="左官工事" 
                                  class="w-full h-64 object-cover">
                             <div class="p-6">
-                                <h3 class="text-2xl font-bold text-black mb-3">
-                                    左官工事
-                                </h3>
+                                <h3 class="text-2xl font-bold text-black mb-3">左官工事</h3>
                                 <p class="text-gray-600 mb-4">
                                     伝統的な左官技法から最新の特殊材料まで、幅広い左官工事に対応しております。
                                 </p>
@@ -209,9 +196,7 @@
                                  alt="基礎工事" 
                                  class="w-full h-64 object-cover">
                             <div class="p-6">
-                                <h3 class="text-2xl font-bold text-black mb-3">
-                                    基礎工事
-                                </h3>
+                                <h3 class="text-2xl font-bold text-black mb-3">基礎工事</h3>
                                 <p class="text-gray-600 mb-4">
                                     建物の安全性を支える重要な基礎工事を、確かな技術と豊富な経験で施工いたします。
                                 </p>
@@ -229,9 +214,7 @@
                                  alt="外構工事" 
                                  class="w-full h-64 object-cover">
                             <div class="p-6">
-                                <h3 class="text-2xl font-bold text-black mb-3">
-                                    外構工事
-                                </h3>
+                                <h3 class="text-2xl font-bold text-black mb-3">外構工事</h3>
                                 <p class="text-gray-600 mb-4">
                                     住まいの顔となる外構空間を、美しく機能的にデザイン・施工いたします。
                                 </p>
@@ -305,121 +288,95 @@
             </div>
         </section>
 
-<!-- ▼▼ ここから追記：コラム ／ 採用情報 ▼▼ -->
+        <!-- ▼▼ ここから追記：コラム ／ 採用情報 ▼▼ -->
 
-<!-- コラム（最新記事風カード + 一覧ボタン） -->
-<section class="py-20 bg-white">
-  <div class="container mx-auto px-4">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl font-bold text-black mb-4">コラム</h2>
-      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-        左官・基礎・外構に関する知識や現場のリアル、メンテナンスのコツなどを発信しています
-      </p>
-    </div>
+        <!-- コラム -->
+        <section class="py-20 bg-white">
+          <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+              <h2 class="text-4xl font-bold text-black mb-4">コラム</h2>
+              <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                左官・基礎・外構に関する知識や現場のリアル、メンテナンスのコツなどを発信しています
+              </p>
+            </div>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
-      <!-- カード1 -->
-      <a href="column.html" class="group block bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all">
-        <img src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2024/05/240502_3-1024x1024.jpg"
-             alt="コラムサムネイル1" class="w-full h-56 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-black mb-2 group-hover:underline">
-            左官仕上げの魅力とメンテナンスの基本
-          </h3>
-          <p class="text-gray-600 text-sm">
-            風合いと耐久性を両立する左官仕上げ。長く美しく保つためのポイントをご紹介。
-          </p>
-        </div>
-      </a>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
+              <a href="column.html" class="group block bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all">
+                <img src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2024/05/240502_3-1024x1024.jpg" alt="コラムサムネイル1" class="w-full h-56 object-cover">
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-black mb-2 group-hover:underline">左官仕上げの魅力とメンテナンスの基本</h3>
+                  <p class="text-gray-600 text-sm">風合いと耐久性を両立する左官仕上げ。長く美しく保つためのポイントをご紹介。</p>
+                </div>
+              </a>
 
-      <!-- カード2 -->
-      <a href="column.html" class="group block bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all">
-        <img src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2024/03/240313_4-1024x768.jpeg"
-             alt="コラムサムネイル2" class="w-full h-56 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-black mb-2 group-hover:underline">
-            住宅の基礎工事、プロがこだわるチェック項目
-          </h3>
-          <p class="text-gray-600 text-sm">
-            建物を支える基礎。見えない部分だからこそ大切な品質管理の要点を解説。
-          </p>
-        </div>
-      </a>
+              <a href="column.html" class="group block bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all">
+                <img src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2024/03/240313_4-1024x768.jpeg" alt="コラムサムネイル2" class="w-full h-56 object-cover">
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-black mb-2 group-hover:underline">住宅の基礎工事、プロがこだわるチェック項目</h3>
+                  <p class="text-gray-600 text-sm">建物を支える基礎。見えない部分だからこそ大切な品質管理の要点を解説。</p>
+                </div>
+              </a>
 
-      <!-- カード3 -->
-      <a href="column.html" class="group block bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all">
-        <img src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2024/03/240313_5-1024x768.jpeg"
-             alt="コラムサムネイル3" class="w-full h-56 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-black mb-2 group-hover:underline">
-            外構で暮らしをデザインする：動線と素材選び
-          </h3>
-          <p class="text-gray-600 text-sm">
-            使いやすさと美しさを両立する外構計画のコツと素材選定の考え方。
-          </p>
-        </div>
-      </a>
-    </div>
+              <a href="column.html" class="group block bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all">
+                <img src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2024/03/240313_5-1024x768.jpeg" alt="コラムサムネイル3" class="w-full h-56 object-cover">
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-black mb-2 group-hover:underline">外構で暮らしをデザインする：動線と素材選び</h3>
+                  <p class="text-gray-600 text-sm">使いやすさと美しさを両立する外構計画のコツと素材選定の考え方。</p>
+                </div>
+              </a>
+            </div>
 
-    <div class="text-center">
-      <a href="column.html"
-         class="inline-block bg-black text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-800 transition-colors">
-        コラム一覧を見る
-      </a>
-    </div>
-  </div>
-</section>
+            <div class="text-center">
+              <a href="column.html" class="inline-block bg-black text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-800 transition-colors">
+                コラム一覧を見る
+              </a>
+            </div>
+          </div>
+        </section>
 
-<!-- 採用情報（3職種カード + 遷移ボタン） -->
-<section class="py-20 bg-gray-50">
-  <div class="container mx-auto px-4">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl font-bold text-black mb-4">採用情報</h2>
-      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-        事業拡大に伴い仲間を募集中。職種別の募集要項をご覧いただけます
-      </p>
-    </div>
+        <!-- 採用情報 -->
+        <section class="py-20 bg-gray-50">
+          <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+              <h2 class="text-4xl font-bold text-black mb-4">採用情報</h2>
+              <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                事業拡大に伴い仲間を募集中。職種別の募集要項をご覧いただけます
+              </p>
+            </div>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
-      <!-- 左官・外構職人 -->
-      <a href="recruit.html#craftsman" class="group block bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all">
-        <img src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2023/05/230531_5.jpg"
-             alt="左官・外構職人" class="w-full h-56 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-black mb-2 group-hover:underline">左官・外構職人</h3>
-          <p class="text-gray-600 text-sm">街中の有名な建物から飲食店の内装まで幅広く施工。</p>
-        </div>
-      </a>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
+              <a href="recruit.html#craftsman" class="group block bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all">
+                <img src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2023/05/230531_5.jpg" alt="左官・外構職人" class="w-full h-56 object-cover">
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-black mb-2 group-hover:underline">左官・外構職人</h3>
+                  <p class="text-gray-600 text-sm">街中の有名な建物から飲食店の内装まで幅広く施工。</p>
+                </div>
+              </a>
 
-      <!-- 基礎職人 -->
-      <a href="recruit.html#foundation" class="group block bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all">
-        <img src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2021/10/211029_HP3-1.jpg"
-             alt="基礎職人" class="w-full h-56 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-black mb-2 group-hover:underline">基礎職人</h3>
-          <p class="text-gray-600 text-sm">建物を支える土台づくり。</p>
-        </div>
-      </a>
+              <a href="recruit.html#foundation" class="group block bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all">
+                <img src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2021/10/211029_HP3-1.jpg" alt="基礎職人" class="w-full h-56 object-cover">
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-black mb-2 group-hover:underline">基礎職人</h3>
+                  <p class="text-gray-600 text-sm">建物を支える土台づくり。</p>
+                </div>
+              </a>
 
-      <!-- 施工管理職（マネージャー職） -->
-      <a href="recruit.html#manager" class="group block bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all">
-        <img src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2023/12/231222_3.jpg"
-             alt="施工管理職" class="w-full h-56 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-black mb-2 group-hover:underline">マネージャー職</h3>
-          <p class="text-gray-600 text-sm">工程・品質・安全管理を担う中核ポジション。</p>
-        </div>
-      </a>
-    </div>
+              <a href="recruit.html#manager" class="group block bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all">
+                <img src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2023/12/231222_3.jpg" alt="施工管理職" class="w-full h-56 object-cover">
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-black mb-2 group-hover:underline">マネージャー職</h3>
+                  <p class="text-gray-600 text-sm">工程・品質・安全管理を担う中核ポジション。</p>
+                </div>
+              </a>
+            </div>
 
-    <div class="text-center">
-      <a href="recruit.html"
-         class="inline-block bg-black text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-800 transition-colors">
-        採用情報を見る
-      </a>
-    </div>
-  </div>
-</section>
+            <div class="text-center">
+              <a href="recruit.html" class="inline-block bg-black text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-800 transition-colors">
+                採用情報を見る
+              </a>
+            </div>
+          </div>
+        </section>
 
         <!-- お問い合わせCTA -->
         <section class="py-20 bg-black text-white">
@@ -438,61 +395,111 @@
     </main>
 
     <!-- フッター -->
-<footer class="bg-gray-800 text-white py-12">
-  <div class="container mx-auto px-4">
-    <!-- 上段：ロゴ（左上固定） -->
-    <div class="mb-8">
-      <a href="https://nakanogumi-kyoto.com/wp/" class="bg-white inline-block p-2 rounded-md" aria-label="株式会社中野組 公式サイトへ">
-        <img
-          src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2023/07/230726_2.png"
-          alt="株式会社中野組 ロゴ"
-          class="block w-auto max-h-12"
-        />
-      </a>
-    </div>
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="mb-8">
+          <a href="https://nakanogumi-kyoto.com/wp/" class="bg-white inline-block p-2 rounded-md" aria-label="株式会社中野組 公式サイトへ">
+            <img
+              src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2023/07/230726_2.png"
+              alt="株式会社中野組 ロゴ"
+              class="block w-auto max-h-12"
+            />
+          </a>
+        </div>
 
-    <!-- 下段：リンク群（均等配置） -->
-    <div class="grid md:grid-cols-3 gap-8 mb-8">
-      <div>
-        <h4 class="text-lg font-semibold mb-4">事業内容</h4>
-        <ul class="space-y-2 text-gray-300">
-          <li><a href="services.html" class="hover:text-white transition-colors">左官工事</a></li>
-          <li><a href="services.html" class="hover:text-white transition-colors">基礎工事</a></li>
-          <li><a href="services.html" class="hover:text-white transition-colors">外構工事</a></li>
-          <li><a href="portfolio.html" class="hover:text-white transition-colors">施工実績</a></li>
-        </ul>
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <h4 class="text-lg font-semibold mb-4">事業内容</h4>
+            <ul class="space-y-2 text-gray-300">
+              <li><a href="services.html" class="hover:text-white transition-colors">左官工事</a></li>
+              <li><a href="services.html" class="hover:text-white transition-colors">基礎工事</a></li>
+              <li><a href="services.html" class="hover:text-white transition-colors">外構工事</a></li>
+              <li><a href="portfolio.html" class="hover:text-white transition-colors">施工実績</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-4">会社情報</h4>
+            <ul class="space-y-2 text-gray-300">
+              <li><a href="about.html" class="hover:text-white transition-colors">中野組について</a></li>
+              <li><a href="about.html" class="hover:text-white transition-colors">代表挨拶</a></li>
+              <li><a href="about.html" class="hover:text-white transition-colors">企業理念</a></li>
+              <li><a href="recruit.html" class="hover:text-white transition-colors">採用情報</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-4">
+              <a href="sitemap.html" class="hover:text-white transition-colors">サイトマップ</a>
+            </h4>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-600 pt-8 text-center">
+          <p class="text-gray-300">&copy; 2025 株式会社中野組. All rights reserved.</p>
+        </div>
       </div>
-
-      <div>
-        <h4 class="text-lg font-semibold mb-4">会社情報</h4>
-        <ul class="space-y-2 text-gray-300">
-          <li><a href="about.html" class="hover:text-white transition-colors">中野組について</a></li>
-          <li><a href="about.html" class="hover:text-white transition-colors">代表挨拶</a></li>
-          <li><a href="about.html" class="hover:text-white transition-colors">企業理念</a></li>
-          <li><a href="recruit.html" class="hover:text-white transition-colors">採用情報</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="text-lg font-semibold mb-4">
-          <a href="sitemap.html" class="hover:text-white transition-colors">サイトマップ</a>
-        </h4>
-      </div>
-    </div>
-
-    <div class="border-t border-gray-600 pt-8 text-center">
-      <p class="text-gray-300">&copy; 2025 株式会社中野組. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
-
+    </footer>
 
     <!-- トップに戻るボタン -->
     <button id="back-to-top" class="fixed bottom-8 right-8 bg-black text-white p-3 rounded-full shadow-lg hover:bg-gray-800 transition-colors opacity-0 pointer-events-none">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- JavaScript -->
+    <!-- JavaScript（既存） -->
     <script src="js/main.js"></script>
+
+    <!-- ヒーロースライダー用スクリプト（追加） -->
+    <script>
+      (function () {
+        const slider = document.querySelector('.hero-slider');
+        if (!slider) return;
+
+        const slides = Array.from(slider.querySelectorAll('.hero-slide'));
+        const dots = Array.from(document.querySelectorAll('.slide-dot'));
+        let current = 0;
+        let timer = null;
+        const DURATION = 7000;
+
+        function show(i) {
+          slides.forEach((slide, idx) => {
+            const isActive = idx === i;
+            slide.classList.toggle('opacity-100', isActive);
+            slide.classList.toggle('opacity-0', !isActive);
+            slide.classList.toggle('z-10', isActive);
+            slide.setAttribute('aria-hidden', String(!isActive));
+          });
+          dots.forEach((dot, idx) => {
+            const isActive = idx === i;
+            dot.classList.toggle('opacity-100', isActive);
+            dot.classList.toggle('opacity-50', !isActive);
+          });
+          current = i;
+        }
+
+        function next() {
+          show((current + 1) % slides.length);
+        }
+
+        dots.forEach((dot, idx) => {
+          dot.addEventListener('click', () => {
+            clearInterval(timer);
+            show(idx);
+            timer = setInterval(next, DURATION);
+          });
+        });
+
+        show(0);
+        timer = setInterval(next, DURATION);
+
+        document.addEventListener('visibilitychange', () => {
+          if (document.hidden) {
+            clearInterval(timer);
+          } else {
+            timer = setInterval(next, DURATION);
+          }
+        });
+      })();
+    </script>
 </body>
 </html>
