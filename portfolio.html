@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>施工実績 | 株式会社中野組</title>
+    <meta name="description" content="株式会社中野組の施工実績をご紹介。左官工事、基礎工事、外構工事の豊富な施工事例をご覧ください。">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans antialiased">
+    <!-- ヘッダー -->
+    <header class="fixed top-0 w-full z-50 bg-white shadow-md transition-all duration-300" id="header">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- ロゴ -->
+<div class="flex items-center">
+  <h1 class="text-2xl font-bold text-black">
+    <a href="https://nakanogumi-kyoto.com/wp/" class="inline-block">
+      <img
+        src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2023/07/230726_2.png"
+        alt="株式会社中野組のロゴ"
+        class="h-10 md:h-12 w-auto"
+      />
+    </a>
+  </h1>
+</div>
+                
+                <!-- デスクトップナビゲーション -->
+                <div class="hidden lg:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-black font-medium transition-colors">ホーム</a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-black font-medium transition-colors">中野組について</a>
+                    <a href="services.html" class="nav-link text-gray-700 hover:text-black font-medium transition-colors">事業内容</a>
+                    <a href="portfolio.html" class="nav-link text-black hover:text-black font-medium transition-colors border-b-2 border-black">施工実績</a>
+                    <a href="recruit.html" class="nav-link text-gray-700 hover:text-black font-medium transition-colors">採用情報</a>
+                    <a href="column.html" class="nav-link text-gray-700 hover:text-black font-medium transition-colors">コラム</a>
+                    <a href="contact.html" class="nav-link bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition-colors">お問い合わせ</a>
+                </div>
+                
+                <!-- モバイルメニューボタン -->
+                <button class="lg:hidden" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-2xl text-gray-700"></i>
+                </button>
+            </div>
+            
+            <!-- モバイルナビゲーション -->
+            <div class="lg:hidden hidden mt-4" id="mobile-menu">
+                <div class="flex flex-col space-y-2">
+                    <a href="index.html" class="nav-link block py-2 text-gray-700 hover:text-black">ホーム</a>
+                    <a href="about.html" class="nav-link block py-2 text-gray-700 hover:text-black">中野組について</a>
+                    <a href="services.html" class="nav-link block py-2 text-gray-700 hover:text-black">事業内容</a>
+                    <a href="portfolio.html" class="nav-link block py-2 text-black font-semibold">施工実績</a>
+                    <a href="recruit.html" class="nav-link block py-2 text-gray-700 hover:text-black">採用情報</a>
+                    <a href="column.html" class="nav-link block py-2 text-gray-700 hover:text-black">コラム</a>
+                    <a href="contact.html" class="nav-link block py-2 bg-black text-white rounded mt-2 text-center">お問い合わせ</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="pt-20">
+        <!-- ページヘッダー -->
+        <section class="py-16 bg-black text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">施工実績</h1>
+            </div>
+        </section>
+
+        <!-- フィルターメニュー -->
+        <section class="py-8 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap justify-center gap-3">
+                    <button class="portfolio-filter active bg-black text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors" data-filter="all">
+                        すべて
+                    </button>
+                    <button class="portfolio-filter bg-white text-black border-2 border-black px-4 py-2 rounded-lg text-sm font-semibold hover:bg-black hover:text-white transition-colors" data-filter="oltremateriagrad">
+                        オルトレマテリア
+                    </button>
+                    <button class="portfolio-filter bg-white text-black border-2 border-black px-4 py-2 rounded-lg text-sm font-semibold hover:bg-black hover:text-white transition-colors" data-filter="mortex">
+                        モールテックス
+                    </button>
+                    <button class="portfolio-filter bg-white text-black border-2 border-black px-4 py-2 rounded-lg text-sm font-semibold hover:bg-black hover:text-white transition-colors" data-filter="jolipat">
+                        ジョリパット
+                    </button>
+                    <button class="portfolio-filter bg-white text-black border-2 border-black px-4 py-2 rounded-lg text-sm font-semibold hover:bg-black hover:text-white transition-colors" data-filter="climateria">
+                        クライマテリア
+                    </button>
+                    <button class="portfolio-filter bg-white text-black border-2 border-black px-4 py-2 rounded-lg text-sm font-semibold hover:bg-black hover:text-white transition-colors" data-filter="credo">
+                        クレド
+                    </button>
+                    <button class="portfolio-filter bg-white text-black border-2 border-black px-4 py-2 rounded-lg text-sm font-semibold hover:bg-black hover:text-white transition-colors" data-filter="beerstone">
+                        ピールストーン
+                    </button>
+                    <button class="portfolio-filter bg-white text-black border-2 border-black px-4 py-2 rounded-lg text-sm font-semibold hover:bg-black hover:text-white transition-colors" data-filter="silicalime">
+                        シリカライム
+                    </button>
+                    <button class="portfolio-filter bg-white text-black border-2 border-black px-4 py-2 rounded-lg text-sm font-semibold hover:bg-black hover:text-white transition-colors" data-filter="shikkui">
+                        漆喰
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 施工実績ギャラリー -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+                    <!-- オルトレマテリア実績 -->
+                    <div class="portfolio-item animate-on-scroll cursor-pointer" data-category="oltremateriagrad" onclick="openPortfolioModal('oltremateriagrad-1')">
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                            <div class="relative overflow-hidden">
+                                <img src="https://nakanogumi-kyoto.com/sakansearch/wp-content/uploads/2024/04/23121201-768x1024.jpg" 
+                                     alt="オルトレマテリア実績1" 
+                                     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+                                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
+                                    <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-black mb-3">オルトレマテリア住宅施工</h3>
+                                <p class="text-gray-600 mb-4">
+                                    マイクロセメント系仕上げ材オルトレマテリアによる高級感のある内装仕上げ。シームレスな美しさが特徴です。
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-black text-white px-3 py-1 rounded-full text-sm">オルトレマテリア</span>
+                                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">住宅</span>
+                                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">内装</span>
+                                </div>
+                                <div class="text-sm text-gray-500">
+                                    <i class="fas fa-calendar mr-2"></i>施工期間: 2週間
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item animate-on-scroll cursor-pointer" data-category="mortex" onclick="openPortfolioModal('mortex-1')">
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                            <div class="relative overflow-hidden">
+                                <img src="https://nakanogumi-kyoto.com/sakansearch/wp-content/uploads/2024/04/IMG_8675-1024x683.jpg" 
+                                     alt="モールテックス実績" 
+                                     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+                                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
+                                    <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-black mb-3">モールテックス店舗施工</h3>
+                                <p class="text-gray-600 mb-4">
+                                    ベルギー製高性能左官材モールテックスによる店舗内装。防水性に優れ、デザイン性も抜群の仕上がり。
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-black text-white px-3 py-1 rounded-full text-sm">モールテックス</span>
+                                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">店舗</span>
+                                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">内装</span>
+                                </div>
+                                <div class="text-sm text-gray-500">
+                                    <i class="fas fa-calendar mr-2"></i>施工期間: 3週間
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item animate-on-scroll cursor-pointer" data-category="jolipat" onclick="openPortfolioModal('jolipat-1')">
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                            <div class="relative overflow-hidden">
+                                <img src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2023/05/230531_4-1024x1024.jpg" 
+                                     alt="ジョリパット実績" 
+                                     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+                                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
+                                    <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-black mb-3">ジョリパット外壁施工</h3>
+                                <p class="text-gray-600 mb-4">
+                                    アクリル系外装仕上げ材ジョリパットによる外壁施工。豊富な色彩と質感で建物に個性を演出。
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-black text-white px-3 py-1 rounded-full text-sm">ジョリパット</span>
+                                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">住宅</span>
+                                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">外装</span>
+                                </div>
+                                <div class="text-sm text-gray-500">
+                                    <i class="fas fa-calendar mr-2"></i>施工期間: 4週間
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item animate-on-scroll cursor-pointer" data-category="shikkui" onclick="openPortfolioModal('shikkui-1')">
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                            <div class="relative overflow-hidden">
+                                <img src="https://nakanogumi-kyoto.com/sakansearch/wp-content/uploads/2024/04/IMG_3319-768x1024.jpg" 
+                                     alt="漆喰実績" 
+                                     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+                                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
+                                    <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-black mb-3">漆喰内装施工</h3>
+                                <p class="text-gray-600 mb-4">
+                                    自然素材の漆喰による伝統的な左官工事。調湿効果と抗菌作用で健康的な室内環境を実現。
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-black text-white px-3 py-1 rounded-full text-sm">漆喰</span>
+                                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">和風住宅</span>
+                                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">内装</span>
+                                </div>
+                                <div class="text-sm text-gray-500">
+                                    <i class="fas fa-calendar mr-2"></i>施工期間: 2週間
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- クライマテリアシリーズ実績 -->
+                    <div class="portfolio-item animate-on-scroll cursor-pointer" data-category="climateria" onclick="openPortfolioModal('climateria-1')">
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                            <div class="relative overflow-hidden">
+                                <img src="https://nakanogumi-kyoto.com/sakansearch/wp-content/uploads/2024/04/IMG_4354-1024x683.jpg" 
+                                     alt="クライマテリア実績" 
+                                     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+                                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
+                                    <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-black mb-3">クライマテリア施工</h3>
+                                <p class="text-gray-600 mb-4">
+                                    機能性とデザイン性を兼ね備えたクライマテリアシリーズによる施工。優れた耐候性と美しい仕上がりを実現。
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-black text-white px-3 py-1 rounded-full text-sm">クライマテリア</span>
+                                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">オフィス</span>
+                                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">内装</span>
+                                </div>
+                                <div class="text-sm text-gray-500">
+                                    <i class="fas fa-calendar mr-2"></i>施工期間: 3週間
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- クレド実績 -->
+                    <div class="portfolio-item animate-on-scroll cursor-pointer" data-category="credo" onclick="openPortfolioModal('credo-1')">
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                            <div class="relative overflow-hidden">
+                                <img src="https://nakanogumi-kyoto.com/sakansearch/wp-content/uploads/2024/03/240322_2-729x1024.jpg" 
+                                     alt="クレド実績" 
+                                     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+                                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
+                                    <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-black mb-3">クレド施工</h3>
+                                <p class="text-gray-600 mb-4">
+                                    高品質なクレド材による施工。独特の質感と優れた機能性で、上質な空間を演出いたします。
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-black text-white px-3 py-1 rounded-full text-sm">クレド</span>
+                                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">住宅</span>
+                                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">内装</span>
+                                </div>
+                                <div class="text-sm text-gray-500">
+                                    <i class="fas fa-calendar mr-2"></i>施工期間: 2週間
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ピールストーン実績 -->
+                    <div class="portfolio-item animate-on-scroll cursor-pointer" data-category="beerstone" onclick="openPortfolioModal('beerstone-1')">
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                            <div class="relative overflow-hidden">
+                                <img src="https://nakanogumi-kyoto.com/sakansearch/wp-content/uploads/2024/03/240305_20.png" 
+                                     alt="ピールストーン実績" 
+                                     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+                                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
+                                    <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-black mb-3">ピールストーン施工</h3>
+                                <p class="text-gray-600 mb-4">
+                                    自然石調の美しい仕上がりを実現するピールストーン。外壁や内装において高級感のある空間を創出。
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-black text-white px-3 py-1 rounded-full text-sm">ピールストーン</span>
+                                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">外構</span>
+                                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">外装</span>
+                                </div>
+                                <div class="text-sm text-gray-500">
+                                    <i class="fas fa-calendar mr-2"></i>施工期間: 4週間
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- シリカライム実績 -->
+                    <div class="portfolio-item animate-on-scroll cursor-pointer" data-category="silicalime" onclick="openPortfolioModal('silicalime-1')">
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                            <div class="relative overflow-hidden">
+                                <img src="https://nakanogumi-kyoto.com/sakansearch/wp-content/uploads/2024/03/240305_15-1024x768.jpeg" 
+                                     alt="シリカライム実績" 
+                                     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+                                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
+                                    <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-black mb-3">シリカライム施工</h3>
+                                <p class="text-gray-600 mb-4">
+                                    天然鉱物系仕上げ材シリカライムによる施工。調湿効果に優れ、健康的で快適な室内環境を実現。
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-black text-white px-3 py-1 rounded-full text-sm">シリカライム</span>
+                                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">住宅</span>
+                                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">内装</span>
+                                </div>
+                                <div class="text-sm text-gray-500">
+                                    <i class="fas fa-calendar mr-2"></i>施工期間: 3週間
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- もっと見るボタン -->
+                <div class="text-center mt-12">
+                    <button class="bg-black text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-800 transition-colors" onclick="loadMorePortfolio()">
+                        もっと見る
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-20 bg-black text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold mb-6">お気軽にお問い合わせください</h2>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="bg-white text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
+                        お問い合わせフォーム
+                    </a>
+                    <a href="contact.html" class="bg-white text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
+                        採用情報
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+<footer class="bg-gray-800 text-white py-12">
+  <div class="container mx-auto px-4">
+    <!-- 上段：ロゴ（左上固定） -->
+    <div class="mb-8">
+      <a href="https://nakanogumi-kyoto.com/wp/" class="bg-white inline-block p-2 rounded-md" aria-label="株式会社中野組 公式サイトへ">
+        <img
+          src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2023/07/230726_2.png"
+          alt="株式会社中野組 ロゴ"
+          class="block w-auto max-h-12"
+        />
+      </a>
+    </div>
+
+    <!-- 下段：リンク群（均等配置） -->
+    <div class="grid md:grid-cols-3 gap-8 mb-8">
+      <div>
+        <h4 class="text-lg font-semibold mb-4">事業内容</h4>
+        <ul class="space-y-2 text-gray-300">
+          <li><a href="services.html" class="hover:text-white transition-colors">左官工事</a></li>
+          <li><a href="services.html" class="hover:text-white transition-colors">基礎工事</a></li>
+          <li><a href="services.html" class="hover:text-white transition-colors">外構工事</a></li>
+          <li><a href="portfolio.html" class="hover:text-white transition-colors">施工実績</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-semibold mb-4">会社情報</h4>
+        <ul class="space-y-2 text-gray-300">
+          <li><a href="about.html" class="hover:text-white transition-colors">中野組について</a></li>
+          <li><a href="about.html" class="hover:text-white transition-colors">代表挨拶</a></li>
+          <li><a href="about.html" class="hover:text-white transition-colors">企業理念</a></li>
+          <li><a href="recruit.html" class="hover:text-white transition-colors">採用情報</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-semibold mb-4">
+          <a href="sitemap.html" class="hover:text-white transition-colors">サイトマップ</a>
+        </h4>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-600 pt-8 text-center">
+      <p class="text-gray-300">&copy; 2025 株式会社中野組. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+    <!-- ポートフォリオモーダル -->
+    <div id="portfolio-modal" class="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg max-w-4xl w-full mx-4 max-h-screen overflow-y-auto">
+            <div class="p-6 md:p-8">
+                <!-- モーダルヘッダー -->
+                <div class="flex justify-between items-center mb-6">
+                    <h3 id="modal-title" class="text-2xl md:text-3xl font-bold text-black"></h3>
+                    <button onclick="closePortfolioModal()" class="text-gray-500 hover:text-black text-2xl">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <!-- モーダルコンテンツ -->
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- 画像 -->
+                    <div>
+                        <img id="modal-image" src="" alt="" class="w-full rounded-lg shadow-lg">
+                        <div class="mt-4">
+                            <div id="modal-tags" class="flex flex-wrap gap-2 mb-4"></div>
+                            <div id="modal-period" class="text-sm text-gray-500"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- 説明文 -->
+                    <div>
+                        <h4 class="text-xl font-bold text-black mb-4">施工詳細</h4>
+                        <div id="modal-description" class="text-gray-700 leading-relaxed mb-6"></div>
+                        
+                        <h4 class="text-xl font-bold text-black mb-4">施工ポイント</h4>
+                        <ul id="modal-points" class="text-gray-700 space-y-2 mb-6"></ul>
+                        
+                        <!-- 問い合わせボタン -->
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a href="contact.html" class="bg-black text-white px-6 py-3 rounded-lg text-center font-semibold hover:bg-gray-800 transition-colors">
+                                <i class="fas fa-envelope mr-2"></i>お問い合わせ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- トップに戻るボタン -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-black text-white p-3 rounded-full shadow-lg hover:bg-gray-800 transition-colors opacity-0 pointer-events-none">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // ポートフォリオフィルター機能
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.portfolio-filter');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filterValue = this.dataset.filter;
+
+                    // アクティブボタンの切り替え
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('active', 'bg-black', 'text-white');
+                        btn.classList.add('bg-white', 'text-black');
+                    });
+                    this.classList.add('active', 'bg-black', 'text-white');
+                    this.classList.remove('bg-white', 'text-black');
+
+                    // アイテムのフィルタリング
+                    portfolioItems.forEach(item => {
+                        const itemCategory = item.dataset.category;
+                        
+                        if (filterValue === 'all' || itemCategory === filterValue) {
+                            item.style.display = 'block';
+                            item.classList.add('animate-on-scroll');
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+
+        // もっと見る機能（将来の拡張用）
+        function loadMorePortfolio() {
+            // 実際のプロジェクトでは、ここでAjaxリクエストを送信して
+            // 追加のポートフォリオアイテムを読み込む
+            alert('追加の実績を読み込む機能は実装時に設定されます。');
+        }
+
+        // ポートフォリオモーダル機能
+        const portfolioData = {
+            'oltremateriagrad-1': {
+                title: 'オルトレマテリア住宅施工',
+                image: 'https://nakanogumi-kyoto.com/sakansearch/wp-content/uploads/2024/04/23121201-768x1024.jpg',
+                tags: ['オルトレマテリア', '住宅', '内装'],
+                period: '施工期間2週間',
+                description: 'マイクロセメント系仕上げ材オルトレマテリアによる高級感のある内装仕上げです。シームレスな美しさが特徴で、洗練された技術で上質な空間を実現しました。防水性と耐久性に優れ、メンテナンスも簡単です。',
+                points: [
+                    'シームレスな仕上がりで美しい連続性',
+                    '防水性・耐久性に優れた素材',
+                    '多様な色彩と質感の選択が可能',
+                    '熱伝導率が高く床暖房に最適'
+                ]
+            },
+            'mortex-1': {
+                title: 'モールテックス店舗施工',
+                image: 'https://nakanogumi-kyoto.com/sakansearch/wp-content/uploads/2024/04/IMG_8675-1024x683.jpg',
+                tags: ['モールテックス', '店舗', '内装'],
+                period: '施工期間3週間',
+                description: 'ベルギー製高性能左官材モールテックスによる店舗内装です。防水性に優れ、デザイン性も抜群の仕上がりでモダンな空間を演出しました。特に湿気の多い環境でも優れた性能を発揮します。',
+                points: [
+                    '優れた防水性で湿気の多い場所に最適',
+                    '抜群の耐久性と耐摩耗性',
+                    '素材の質感を活かしたデザイン',
+                    '耐化学性に優れ清掃しやすい'
+                ]
+            }
+        };
+
+        function openPortfolioModal(itemId) {
+            const data = portfolioData[itemId];
+            if (!data) return;
+
+            // モーダルにデータを設定
+            document.getElementById('modal-title').textContent = data.title;
+            document.getElementById('modal-image').src = data.image;
+            document.getElementById('modal-image').alt = data.title;
+            document.getElementById('modal-description').textContent = data.description;
+            document.getElementById('modal-period').innerHTML = '<i class="fas fa-calendar mr-2"></i>' + data.period;
+
+            // タグを設定
+            const tagsContainer = document.getElementById('modal-tags');
+            tagsContainer.innerHTML = '';
+            data.tags.forEach((tag, index) => {
+                const tagElement = document.createElement('span');
+                tagElement.className = index === 0 ? 'bg-black text-white px-3 py-1 rounded-full text-sm' : 'bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm';
+                tagElement.textContent = tag;
+                tagsContainer.appendChild(tagElement);
+            });
+
+            // ポイントを設定
+            const pointsContainer = document.getElementById('modal-points');
+            pointsContainer.innerHTML = '';
+            data.points.forEach(point => {
+                const li = document.createElement('li');
+                li.innerHTML = '• ' + point;
+                pointsContainer.appendChild(li);
+            });
+
+            // モーダルを表示
+            document.getElementById('portfolio-modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePortfolioModal() {
+            document.getElementById('portfolio-modal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // モーダル外をクリックしたときに閉じる
+        document.getElementById('portfolio-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closePortfolioModal();
+            }
+        });
+
+        // ESCキーでモーダルを閉じる
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closePortfolioModal();
+            }
+        });
+    </script>
+</body>
+</html>

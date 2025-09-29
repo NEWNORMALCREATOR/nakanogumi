@@ -1,0 +1,335 @@
+/* 株式会社中野組 コーポレートサイト CSS - 黒テーマ統一 */
+
+/* フォント設定 */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.6;
+}
+
+/* ヘッダー */
+#header {
+    transition: all 0.3s ease;
+}
+
+#header.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+/* ナビゲーション - 黒テーマ */
+.nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    transform: scaleX(0);
+    transform-origin: right;
+    animation: underlineExpand 0.3s ease forwards;
+}
+
+@keyframes underlineExpand {
+    to {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+}
+
+/* ヒーロースライダー */
+.hero-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-slide {
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-slide.active {
+    opacity: 1 !important;
+}
+
+/* スライドドット - 黒テーマ */
+.slide-dot {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.slide-dot.active {
+    opacity: 1 !important;
+    transform: scale(1.2);
+}
+
+/* セクション見出し - 黒テーマ */
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #000000;
+    border-radius: 2px;
+}
+
+/* ボタンエフェクト - 黒テーマ */
+.btn-primary {
+    background: #000000;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-primary:hover::before {
+    left: 100%;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    background-color: #333333;
+}
+
+/* カードエフェクト */
+.card {
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #e5e7eb;
+}
+
+/* アニメーション */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 0.8s ease;
+}
+
+.animate-fadeInLeft {
+    animation: fadeInLeft 0.8s ease;
+}
+
+.animate-fadeInRight {
+    animation: fadeInRight 0.8s ease;
+}
+
+/* スクロールアニメーション用 */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-on-scroll.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* トップに戻るボタン */
+#back-to-top {
+    transition: all 0.3s ease;
+}
+
+#back-to-top:hover {
+    transform: translateY(-2px);
+}
+
+/* 黒テーマ統一のための追加スタイル */
+.text-primary {
+    color: #000000 !important;
+}
+
+.bg-primary {
+    background-color: #000000 !important;
+}
+
+.border-primary {
+    border-color: #000000 !important;
+}
+
+.hover\:bg-primary:hover {
+    background-color: #333333 !important;
+}
+
+.hover\:text-primary:hover {
+    color: #000000 !important;
+}
+
+/* フォーカス状態 - 黒テーマ */
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #000000;
+    outline-offset: 2px;
+}
+
+/* レスポンシブ調整 */
+@media (max-width: 768px) {
+    .hero-slide h2 {
+        font-size: 2.5rem !important;
+        line-height: 1.2;
+    }
+    
+    .hero-slide p {
+        font-size: 1.1rem !important;
+    }
+    
+    .hero-slide .flex {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-slide h2 {
+        font-size: 2rem !important;
+    }
+    
+    .hero-slide p {
+        font-size: 1rem !important;
+    }
+    
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* スクロールバー */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333333;
+}
+
+/* パフォーマンス最適化 */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 印刷スタイル */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    body {
+        color: black !important;
+        background: white !important;
+    }
+}
+
+/* 高コントラストモード */
+@media (prefers-contrast: high) {
+    .hero-slide {
+        background-color: black !important;
+    }
+    
+    .hero-slide h2,
+    .hero-slide p {
+        color: white !important;
+        text-shadow: 2px 2px 4px black;
+    }
+}
+
+/* ホバーエフェクト強化 */
+.group:hover .group-hover\:scale-105 {
+    transform: scale(1.05);
+}
+
+/* 影の調整 */
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.hover\:shadow-xl:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* 黒背景でのテキスト可読性向上 */
+.bg-black {
+    background-color: #000000;
+}
+
+.bg-black .text-white {
+    color: #ffffff;
+}

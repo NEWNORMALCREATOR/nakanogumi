@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コラム | 株式会社中野組</title>
+    <meta name="description" content="株式会社中野組の採用コラム。建設業界の知識や技術について詳しく解説いたします。">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans antialiased">
+    <!-- ヘッダー -->
+    <header class="fixed top-0 w-full z-50 bg-white shadow-md transition-all duration-300" id="header">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- ロゴ -->
+<div class="flex items-center">
+  <h1 class="text-2xl font-bold text-black">
+    <a href="https://nakanogumi-kyoto.com/wp/" class="inline-block">
+      <img
+        src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2023/07/230726_2.png"
+        alt="株式会社中野組のロゴ"
+        class="h-10 md:h-12 w-auto"
+      />
+    </a>
+  </h1>
+</div>
+                
+                <!-- デスクトップナビゲーション -->
+                <div class="hidden lg:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-black font-medium transition-colors">ホーム</a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-black font-medium transition-colors">中野組について</a>
+                    <a href="services.html" class="nav-link text-gray-700 hover:text-black font-medium transition-colors">事業内容</a>
+                    <a href="portfolio.html" class="nav-link text-gray-700 hover:text-black font-medium transition-colors">施工実績</a>
+                    <a href="recruit.html" class="nav-link text-gray-700 hover:text-black font-medium transition-colors">採用情報</a>
+                    <a href="column.html" class="nav-link text-black hover:text-black font-medium transition-colors border-b-2 border-black">コラム</a>
+                    <a href="contact.html" class="nav-link bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition-colors">お問い合わせ</a>
+                </div>
+                
+                <!-- モバイルメニューボタン -->
+                <button class="lg:hidden" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-2xl text-gray-700"></i>
+                </button>
+            </div>
+            
+            <!-- モバイルナビゲーション -->
+            <div class="lg:hidden hidden mt-4" id="mobile-menu">
+                <div class="flex flex-col space-y-2">
+                    <a href="index.html" class="nav-link block py-2 text-gray-700 hover:text-black">ホーム</a>
+                    <a href="about.html" class="nav-link block py-2 text-gray-700 hover:text-black">中野組について</a>
+                    <a href="services.html" class="nav-link block py-2 text-gray-700 hover:text-black">事業内容</a>
+                    <a href="portfolio.html" class="nav-link block py-2 text-gray-700 hover:text-black">施工実績</a>
+                    <a href="recruit.html" class="nav-link block py-2 text-gray-700 hover:text-black">採用情報</a>
+                    <a href="column.html" class="nav-link block py-2 text-black font-semibold">コラム</a>
+                    <a href="contact.html" class="nav-link block py-2 bg-black text-white rounded mt-2 text-center">お問い合わせ</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="pt-24">
+        <!-- パンくずナビ -->
+        <section class="bg-gray-50 py-4">
+            <div class="container mx-auto px-4">
+                <nav class="text-sm">
+                    <ol class="flex items-center space-x-2">
+                        <li><a href="index.html" class="text-gray-500 hover:text-black">ホーム</a></li>
+                        <li class="text-gray-400">/</li>
+                        <li class="text-black font-medium">コラム</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <!-- ヒーローセクション -->
+        <section class="bg-gradient-to-br from-gray-900 to-gray-700 py-20 text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">コラム</h1>
+            </div>
+        </section>
+
+        <!-- コラム一覧セクション -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <!-- コラム記事 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
+                        <div class="md:flex">
+                            <!-- 画像 -->
+                            <div class="md:w-1/3">
+                                <img src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2023/05/230531_4.jpg" 
+                                     alt="左官工事のライセンス" 
+                                     class="w-full h-64 md:h-full object-cover">
+                            </div>
+                            
+                            <!-- コンテンツ -->
+                            <div class="md:w-2/3 p-8">
+                                <div class="flex items-center mb-4">
+                                    <span class="bg-black text-white px-3 py-1 rounded-full text-sm mr-4">技術解説</span>
+                                    <span class="text-gray-500 text-sm">2024年3月15日</span>
+                                </div>
+                                
+                                <h2 class="text-2xl font-bold mb-4 text-gray-900">
+                                    <a href="#license-article" class="hover:text-black transition-colors">
+                                        ライセンスとは？建設業界で必要な資格と技能について
+                                    </a>
+                                </h2>
+                                
+                                <p class="text-gray-600 mb-4 leading-relaxed">
+                                    建設業界では、安全で高品質な施工を実現するために様々なライセンス（資格・免許）が必要です。
+                                    特に左官工事においては、職人の技術力と正式な資格が品質を左右する重要な要素となります。
+                                </p>
+                                
+                                <a href="#license-article" class="inline-flex items-center text-black font-medium hover:underline">
+                                    続きを読む
+                                    <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- コラム詳細記事 -->
+        <section id="license-article" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8 md:p-12">
+                    <article>
+                        <!-- 記事ヘッダー -->
+                        <header class="mb-8">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-black text-white px-3 py-1 rounded-full text-sm mr-4">技術解説</span>
+                                <span class="text-gray-500 text-sm">2024年3月15日 公開</span>
+                            </div>
+                            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                                ライセンスとは？建設業界で必要な資格と技能について
+                            </h1>
+                            <p class="text-lg text-gray-600 leading-relaxed">
+                                建設業界における資格制度の重要性と、中野組が求める技能について詳しく解説いたします。
+                            </p>
+                        </header>
+
+                        <!-- 記事本文 -->
+                        <div class="prose prose-lg max-w-none">
+                            <!-- 導入 -->
+                            <div class="mb-8">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-4">建設業界におけるライセンスの意義</h2>
+                                <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-6">
+                                    <p class="text-gray-700 leading-relaxed">
+                                        建設業界において「ライセンス」とは、特定の技術や知識を持つことを証明する公的な資格や免許のことを指します。これらは安全性の確保、品質の向上、そして職人としての技能レベルを客観的に示す重要な指標となります。
+                                    </p>
+                                </div>
+                                
+                                <img src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2023/05/230531_1.jpg" 
+                                     alt="左官職人の技術" 
+                                     class="w-full rounded-lg mb-6">
+                            </div>
+
+                            <!-- 主要な資格 -->
+                            <div class="mb-8">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-6">左官工事に関する主要な資格</h2>
+                                
+                                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                                    <div class="bg-gray-50 rounded-lg p-6">
+                                        <h3 class="text-xl font-semibold text-gray-900 mb-3 flex items-center">
+                                            <i class="fas fa-certificate text-black mr-2"></i>
+                                            左官技能士
+                                        </h3>
+                                        <p class="text-gray-600 text-sm mb-3">【国家資格】</p>
+                                        <p class="text-gray-700 leading-relaxed">
+                                            左官工事の技能を証明する国家資格。1級・2級・3級があり、
+                                            実技試験と学科試験の両方に合格する必要があります。
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="bg-gray-50 rounded-lg p-6">
+                                        <h3 class="text-xl font-semibold text-gray-900 mb-3 flex items-center">
+                                            <i class="fas fa-hard-hat text-black mr-2"></i>
+                                            建設業許可
+                                        </h3>
+                                        <p class="text-gray-600 text-sm mb-3">【事業者資格】</p>
+                                        <p class="text-gray-700 leading-relaxed">
+                                            左官工事業を営むために必要な許可。一般建設業許可と
+                                            特定建設業許可の2種類があります。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 技能レベル -->
+                            <div class="mb-8">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-6">技能レベルと習得期間</h2>
+                                
+                                <div class="space-y-6">
+                                    <div class="border-l-4 border-green-500 pl-6">
+                                        <h3 class="text-lg font-semibold text-gray-900 mb-2">初級レベル（1〜3年）</h3>
+                                        <ul class="text-gray-700 space-y-1">
+                                            <li>• 基本的な道具の使い方</li>
+                                            <li>• 材料の種類と特性の理解</li>
+                                            <li>• 簡単な下地処理作業</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="border-l-4 border-yellow-500 pl-6">
+                                        <h3 class="text-lg font-semibold text-gray-900 mb-2">中級レベル（3〜7年）</h3>
+                                        <ul class="text-gray-700 space-y-1">
+                                            <li>• 一般的な左官仕上げ技術</li>
+                                            <li>• 品質管理の基本</li>
+                                            <li>• 左官技能士3級・2級取得目標</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="border-l-4 border-red-500 pl-6">
+                                        <h3 class="text-lg font-semibold text-gray-900 mb-2">上級レベル（7年以上）</h3>
+                                        <ul class="text-gray-700 space-y-1">
+                                            <li>• 特殊工法・意匠左官技術</li>
+                                            <li>• 現場指導・品質管理</li>
+                                            <li>• 左官技能士1級取得</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 中野組の取り組み -->
+                            <div class="mb-8">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-6">中野組の資格取得サポート</h2>
+                                
+                                <div class="bg-gradient-to-r from-gray-50 to-blue-50 rounded-lg p-6 mb-6">
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <i class="fas fa-graduation-cap text-2xl text-black mr-4 mt-1"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-xl font-semibold text-gray-900 mb-3">充実した教育制度</h3>
+                                            <p class="text-gray-700 leading-relaxed mb-4">
+                                                当社では、職人一人ひとりの技能向上を支援するため、資格取得に向けた包括的なサポート体制を整えています。
+                                            </p>
+                                            
+                                            <div class="grid md:grid-cols-2 gap-4">
+                                                <div class="bg-white rounded p-4">
+                                                    <h4 class="font-semibold text-gray-900 mb-2">技術指導</h4>
+                                                    <p class="text-sm text-gray-600">経験豊富な職長による実務指導</p>
+                                                </div>
+                                                <div class="bg-white rounded p-4">
+                                                    <h4 class="font-semibold text-gray-900 mb-2">受験サポート</h4>
+                                                    <p class="text-sm text-gray-600">資格試験の受験費用補助制度</p>
+                                                </div>
+                                                <div class="bg-white rounded p-4">
+                                                    <h4 class="font-semibold text-gray-900 mb-2">キャリアアップ</h4>
+                                                    <p class="text-sm text-gray-600">資格取得による昇進・昇給制度</p>
+                                                </div>
+                                                <div class="bg-white rounded p-4">
+                                                    <h4 class="font-semibold text-gray-900 mb-2">継続学習</h4>
+                                                    <p class="text-sm text-gray-600">新技術・工法の研修機会提供</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 実績・事例 -->
+                            <div class="mb-8">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-6">当社職人の資格取得実績</h2>
+                                
+                                <div class="bg-white border rounded-lg overflow-hidden">
+                                    <div class="bg-gray-50 px-6 py-4">
+                                        <h3 class="text-lg font-semibold text-gray-900">過去3年間の実績</h3>
+                                    </div>
+                                    <div class="p-6">
+                                        <div class="grid md:grid-cols-3 gap-6 text-center">
+                                            <div class="border-r border-gray-200 pr-6">
+                                                <div class="text-3xl font-bold text-black mb-2">15名</div>
+                                                <div class="text-gray-600">左官技能士取得者</div>
+                                            </div>
+                                            <div class="border-r border-gray-200 pr-6">
+                                                <div class="text-3xl font-bold text-black mb-2">8名</div>
+                                                <div class="text-gray-600">1級技能士取得者</div>
+                                            </div>
+                                            <div>
+                                                <div class="text-3xl font-bold text-black mb-2">100%</div>
+                                                <div class="text-gray-600">受験サポート実施率</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- まとめ -->
+                            <div class="mb-8">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-6">まとめ</h2>
+                                <div class="bg-gray-50 rounded-lg p-6">
+                                    <p class="text-gray-700 leading-relaxed mb-4">
+                                        建設業界におけるライセンス（資格）は、単なる証明書ではなく、職人としての技術力と信頼性を示す重要な指標です。
+                                        中野組では、全ての職人が着実にスキルアップできるよう、資格取得を全力でサポートしています。
+                                    </p>
+                                    <p class="text-gray-700 leading-relaxed">
+                                        未経験からでも段階的に技術を身につけ、将来的には左官技能士1級を目指すことができる環境を整えています。
+                                        建設業界でのキャリア形成にご興味をお持ちの方は、ぜひお気軽にお問い合わせください。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CTA -->
+                        <div class="bg-black text-white rounded-lg p-8 text-center mt-12">
+                            <h3 class="text-2xl font-bold mb-4">建設業界でのキャリアを始めませんか？</h3>
+                            <p class="text-gray-300 mb-6">
+                                中野組では、意欲ある方の成長を全力でサポートします。<br>
+                                まずはお気軽にご相談ください。
+                            </p>
+                            <div class="space-y-4 md:space-y-0 md:space-x-4 md:flex md:justify-center">
+                                <a href="recruit.html" class="inline-block bg-white text-black px-8 py-3 rounded font-medium hover:bg-gray-100 transition-colors">
+                                    採用情報を見る
+                                </a>
+                                <a href="contact.html" class="inline-block border-2 border-white text-white px-8 py-3 rounded font-medium hover:bg-white hover:text-black transition-colors">
+                                    お問い合わせ
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 関連記事セクション -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-bold text-center mb-12">関連記事</h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- 関連記事1 -->
+                        <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                            <img src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2024/03/240313_4.jpeg" 
+                                 alt="基礎工事の技術" 
+                                 class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">技術解説</span>
+                                <h3 class="text-xl font-bold mt-4 mb-2">基礎工事の重要性と技術要点</h3>
+                                <p class="text-gray-600 text-sm mb-4">
+                                    建物の土台となる基礎工事の技術と品質管理について詳しく解説します。
+                                </p>
+                                <span class="text-gray-400 text-sm">近日公開予定</span>
+                            </div>
+                        </article>
+
+                        <!-- 関連記事2 -->
+                        <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                            <img src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2023/05/230531_3.jpg" 
+                                 alt="外構工事のデザイン" 
+                                 class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">業界知識</span>
+                                <h3 class="text-xl font-bold mt-4 mb-2">外構工事のデザインと機能性</h3>
+                                <p class="text-gray-600 text-sm mb-4">
+                                    美しさと実用性を両立する外構工事の設計思想について解説します。
+                                </p>
+                                <span class="text-gray-400 text-sm">近日公開予定</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <section class="py-20 bg-black text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold mb-6">お気軽にお問い合わせください</h2>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="bg-white text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
+                        お問い合わせフォーム
+                    </a>
+                    <a href="contact.html" class="bg-white text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
+                        採用情報
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+<footer class="bg-gray-800 text-white py-12">
+  <div class="container mx-auto px-4">
+    <!-- 上段：ロゴ（左上固定） -->
+    <div class="mb-8">
+      <a href="https://nakanogumi-kyoto.com/wp/" class="bg-white inline-block p-2 rounded-md" aria-label="株式会社中野組 公式サイトへ">
+        <img
+          src="https://nakanogumi-kyoto.com/wp/wp-content/uploads/2023/07/230726_2.png"
+          alt="株式会社中野組 ロゴ"
+          class="block w-auto max-h-12"
+        />
+      </a>
+    </div>
+
+    <!-- 下段：リンク群（均等配置） -->
+    <div class="grid md:grid-cols-3 gap-8 mb-8">
+      <div>
+        <h4 class="text-lg font-semibold mb-4">事業内容</h4>
+        <ul class="space-y-2 text-gray-300">
+          <li><a href="services.html" class="hover:text-white transition-colors">左官工事</a></li>
+          <li><a href="services.html" class="hover:text-white transition-colors">基礎工事</a></li>
+          <li><a href="services.html" class="hover:text-white transition-colors">外構工事</a></li>
+          <li><a href="portfolio.html" class="hover:text-white transition-colors">施工実績</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-semibold mb-4">会社情報</h4>
+        <ul class="space-y-2 text-gray-300">
+          <li><a href="about.html" class="hover:text-white transition-colors">中野組について</a></li>
+          <li><a href="about.html" class="hover:text-white transition-colors">代表挨拶</a></li>
+          <li><a href="about.html" class="hover:text-white transition-colors">企業理念</a></li>
+          <li><a href="recruit.html" class="hover:text-white transition-colors">採用情報</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-semibold mb-4">
+          <a href="sitemap.html" class="hover:text-white transition-colors">サイトマップ</a>
+        </h4>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-600 pt-8 text-center">
+      <p class="text-gray-300">&copy; 2025 株式会社中野組. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
